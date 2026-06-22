@@ -1,0 +1,37 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    border: none;
+}
+
+.container{
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    gap: 30px;
+}
+
+.menuBttn{
+    height: 40px;
+    font-size: 15px;background-color: black;
+    color: white;
+    border: none;
+}
+
+.menuBttn:hover{
+    color:yellow
+}
+
+.cabeçalho{
+    background-color: yellow;
+    text-align: center;
+}
