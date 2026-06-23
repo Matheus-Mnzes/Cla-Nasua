@@ -9,14 +9,28 @@
 <body>
     <div class="container">
         <header class="menu">
-            <button class="menuBttn">Home</button>
-            <button class="menuBttn">Membros</button>
-            <button class="menuBttn">Projetos</button>
-            <button class="menuBttn">Corrida a Insignia de B.P.</button>
+            <button onclick=" abrirAba('home')" class="menuBttn">Home</button>
+            <button onclick=" abrirAba('membros')" class="menuBttn">Membros</button>
+            <button onclick=" abrirAba('projetos')" class="menuBttn">Projetos</button>
+            <button onclick=" abrirAba('insignia')" class="menuBttn">Corrida a Insignia de B.P.</button>
         </header>
-        <div class="cabeçalho">
-            <h1>Bem vindo ao site do Clã Nasua, <strong id="nome"></strong></h1>
-            <h2>Aqui você podera ver nossos projetos, membros e muito mais sobre o Clã</h2>
+        <div id="home" class="aba ativa">
+            <div class="cabeçalho">
+                <h1></strong> <strong id="nome"></h1>
+                <img src="Imagens/Emoji_Quati_Joia.png" alt="">
+            </div>
+            <div>
+                <h2></h2>
+            </div>
+        </div>
+        <div id="membros" class="aba">
+            <h1>Algo</h1>
+        </div>
+        <div id="projetos" class="aba">
+
+        </div>
+        <div id="insignia" class="aba">
+
         </div>
     </div>
     <script src="script.js"></script>

@@ -16,8 +16,10 @@
 .menu{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: black;
     gap: 30px;
+    height: 60px;
 }
 
 .menuBttn{
@@ -28,10 +30,29 @@
 }
 
 .menuBttn:hover{
-    color:yellow
+    color: #F6BE28
+}
+
+aba{
+    display: none;
+}
+
+.aba.ativa{
+    display: block;
 }
 
 .cabeçalho{
-    background-color: yellow;
-    text-align: center;
+    background-color: #F6BE28;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabeçalho img{
+    height: 300px;
+}
+
+.cabeçalho h1{
+    font-size: 50px;
 }
