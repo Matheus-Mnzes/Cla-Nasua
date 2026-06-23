@@ -1,5 +1,5 @@
 var nome = prompt("Qual o seu nome? ")
-document.querySelector('strong#nome').innerHTML = `Seja bem vindo ao clã nasua, ${nome}`
+document.querySelector('strong#nome').innerHTML = `Seja bem vindo ao site do Clã Nasua, ${nome}`
 
 
 function abrirAba(id){
