@@ -7,13 +7,13 @@
 
 .body{
     border: none;
-    background-color: #271f1f;
+    background-color: white;
     padding: none;
 }
 
 .container{
     align-items: center;
-    background-color: #3c3c3c;
+    background-color: white;
     height: 100vw;
 }
 
@@ -97,7 +97,7 @@
 .jovens{
     display: flex;
     flex-direction: column;
-    background-color: #271f1f;
+    background-color: #F6BE28;
     width: 300px;
     height: 470px;
     border-radius: 10px;
@@ -130,3 +130,4 @@
 .logoTartan img{
     width: 90px;
 }
+
