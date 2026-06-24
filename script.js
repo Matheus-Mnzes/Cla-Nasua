@@ -7,3 +7,8 @@ function abrirAba(id){
 
     document.getElementById(id).classList.add("ativa")
 }
+
+
+function modoEscuro(){
+    document.body.classList.toggle("dark")
+}
