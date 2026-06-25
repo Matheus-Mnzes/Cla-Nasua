@@ -9,6 +9,11 @@ function abrirAba(id){
 }
 
 
+function abrirSidebar(){
+    document.getElementById("sidebar").classList.toggle("aberta")
+}
+
+
 function modoEscuro(){
     document.body.classList.toggle("dark")
 }
