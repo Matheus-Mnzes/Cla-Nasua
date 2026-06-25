@@ -9,17 +9,23 @@
 <body>
     <div class="container">
         <header class="menu">
-            <button onclick=" abrirAba('home')" class="menuBttn">Home</button>
-            <button onclick=" abrirAba('noticias')" class="menuBttn">Noticias</button>
-            <button onclick=" abrirAba('membros')" class="menuBttn">Membros</button>
-            <button onclick=" abrirAba('projetos')" class="menuBttn">Projetos</button>
-            <button onclick=" abrirAba('insignia')" class="menuBttn">Corrida a Insignia de B.P.</button>
-            <button onclick=" abrirSidebar()" class="abresidebarBttn">☰</button>  
+            <div class="lateral">
+                <button onclick=" abrirSidebar()" class="abresidebarBttn">☰</button>  
+            </div>
+            <div class="abas">
+                <button onclick=" abrirAba('home'), fecharSidebar()" class="menuBttn">Home</button>
+                <button onclick=" abrirAba('noticias'), fecharSidebar()" class="menuBttn">Noticias</button>
+                <button onclick=" abrirAba('membros'), fecharSidebar()" class="menuBttn">Membros</button>
+                <button onclick=" abrirAba('projetos'), fecharSidebar()" class="menuBttn">Projetos</button>
+                <button onclick=" abrirAba('insignia'), fecharSidebar()" class="menuBttn">Corrida a Insignia de B.P.</button>
+            </div>
         </header>
 
 
         <div id="sidebar" class="sidebar">
-            <button onclick="modoEscuro()">Modo Escuro</button>
+            <button onclick=" abrirSidebar()" class="abresidebarBttn2">☰</button>  
+            <h2>Menu Lateral</h2>
+            <button onclick="modoEscuro()" class="sidebarButton">Modo Escuro</button>
         </div>
 
 
@@ -31,7 +37,19 @@
             </div>
 
             <div class="principal">
-                <h1>Sobre o Clã</h1>
+
+                 
+                <div class="sobre">
+                    <h1>Sobre o Clã</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, minima inventore saepe maxime soluta rerum autem. Ratione ducimus maiores numquam molestiae animi illum provident. Dolor id iure corporis quidem?</p>
+                    <img src="Imagens/Emoji_Quati_Joia.png" alt="">
+                </div>
+
+                <div class="sobre">
+                    <h1>Sobre nosso Grupo</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, minima inventore saepe maxime soluta rerum autem. Ratione ducimus maiores numquam molestiae animi illum provident. Dolor id iure corporis quidem?</p>
+                    <img src="Imagens/Emoji_Quati_Joia.png" alt="">
+                </div>
             </div>
         </div>
 

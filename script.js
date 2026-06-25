@@ -13,6 +13,10 @@ function abrirSidebar(){
     document.getElementById("sidebar").classList.toggle("aberta")
 }
 
+function fecharSidebar(){
+    document.getElementById("sidebar").classList.remove("aberta")
+}
+
 
 function modoEscuro(){
     document.body.classList.toggle("dark")
