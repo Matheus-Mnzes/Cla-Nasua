@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,8 @@
 </head>
 <body>
     <div class="container">
+
+        <!--Menu de Abas-->
         <header class="menu">
             <div class="lateral">
                 <button onclick=" abrirSidebar()" class="abresidebarBttn">☰</button>  
@@ -18,12 +20,13 @@
                 <button onclick=" abrirAba('noticias'), fecharSidebar()" class="menuBttn">Noticias</button>
                 <button onclick=" abrirAba('membros'), fecharSidebar()" class="menuBttn">Membros</button>
                 <button onclick=" abrirAba('projetos'), fecharSidebar()" class="menuBttn">Projetos</button>
-                <button onclick=" abrirAba('insignia'), fecharSidebar()" class="menuBttn">Corrida a Insignia de B.P.</button>
+                <button onclick=" abrirAba('insignia'), fecharSidebar()" class="menuBttn">Insignia de B.P.</button>
             </div>
             <div></div>
         </header>
 
 
+        <!--Sidebar-->
         <div id="sidebar" class="sidebar">
             <button onclick=" abrirSidebar()" class="abresidebarBttn2">☰</button>  
             <h2>Menu Lateral</h2>
@@ -31,16 +34,16 @@
         </div>
 
 
+        <!--Aba Home-->
         <div id="home" class="aba ativa">
             <div class="cabeçalho">
                 <h1><strong>Site do Clã Nasua</strong></h1>
-                <h3><strong id="nome"></strong></h3> 
+                <h3><strong>Seja bem vindo ao site do Clã Nasua</strong></h3> 
                 <img src="Imagens/Emoji-Quati_Joia_Escoteiro.png" alt="">
             </div>
 
             <div class="principal">
 
-                 
                 <div class="sobre">
                     <h1>Sobre o Clã</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, minima inventore saepe maxime soluta rerum autem. Ratione ducimus maiores numquam molestiae animi illum provident. Dolor id iure corporis quidem?</p>
@@ -56,37 +59,59 @@
         </div>
 
 
+        <!--Aba Noticias do Clã-->
         <div id="noticias" class="aba">
             <h1><strong>Noticias do Clã</strong></h1>
             <div class="linhaAmarela"></div>
+
+            <div class="noticias">
+                <div>
+                    <img src="Imagens/Anuncio 1.jpeg" alt="">
+                </div>   
+                <div> 
+                    <img src="Imagens/Noticia1.jpeg" alt="">
+                </div>
+            </div>
         </div>
 
 
+        <!--Aba Membro do Clã-->
         <div id="membros" class="aba">
             <h1><strong>Membros do Clã</strong></h1>
             <div class="linhaAmarela"></div>
 
             <div class="membros">
                 <div class="jovens">
-                    <img src="Imagens/Matheus.jpeg" alt="">
-                    <h3>Matheus de Menezes</h3>
+                    <img src="Imagens/Aba membros/Matheus.jpeg" alt="">
+                    <div class="infoJovens">
+                        <h3>Matheus de Menezes</h3>
+                        <p>Atual Presidente da Cumade</p>
+                    </div>
                 </div>
                 <div class="jovens">
-                    <img src="Imagens/Isadora.jpeg" alt="">
-                    <h3>Isadora Ribeiro</h3>
+                    <img src="Imagens/Aba membros/Isadora.jpeg" alt="">
+                    <div class="infoJovens">
+                        <h3>Isadora Ribeiro</h3>
+                        <p>Atual Vice Presidente da Cumade</p>
+                    </div>
                 </div>
                 <div class="jovens">
-                    <img src="Imagens/Luiza.jpeg" alt="">
-                    <h3>Luíza Rodriguez</h3>
+                    <img src="Imagens/Aba membros/Luiza.jpeg" alt="">
+                    <div class="infoJovens">
+                        <h3>Luíza Rodriguez</h3>
+                    </div>
                 </div>
                 <div class="jovens">
-                    <img src="Imagens/Bernardo.jpeg" alt="">
-                    <h3>Bernardo Rodriguez</h3>
+                    <img src="Imagens/Aba membros/Bernardo.jpeg" alt="">
+                    <div class="infoJovens">
+                        <h3>Bernardo Rodriguez</h3>
+                    </div>
                 </div>
             </div>
         </div>
 
 
+        <!--Aba Projetos do Clã-->
         <div id="projetos" class="aba">
             <h1><strong>Projetos do Clã</strong></h1>
             <div class="linhaAmarela">
@@ -94,44 +119,59 @@
         </div>
 
 
+        <!--Aba Corrida a Insignia de B.P.-->
         <div id="insignia" class="aba">
             <h1><strong>Corrida pela Insignia de B.P.</strong></h1>
             <div class="linhaAmarela"></div>
 
-            <div>
+            <div class="corrida">
                 <div class="corredores">
-                    <img src="Imagens/Icone-Matheus.png" alt="">
+                    <img src="Imagens/Aba corrida/Icone-Matheus.png" alt="">
                     <div>
-                        <h3>Matheus 0%</h3>
+                        <h3>Matheus</h3>
+                        <h3>0%</h3>
                         <div class="barra">
                             <div class="progresso matheus"></div>
                         </div>
                     </div>
                 </div>
                 <div class="corredores">
-                    <img src="Imagens/Icone-isa.png" alt="">
+                    <img src="Imagens/Aba corrida/Icone-isa.png" alt="">
                     <div>
-                        <h3>Isadora 0%</h3>
+                        <h3>Isadora</h3>
+                        <h3>0%</h3>
                         <div class="barra">
                             <div class="progresso isa"></div>
                         </div>
                     </div>
                 </div>
                 <div class="corredores">
-                    <img src="Imagens/Icone-lu.png" alt="">
+                    <img src="Imagens/Aba corrida/Icone-lu.png" alt="">
                     <div>
-                        <h3>Luiza 0%</h3>
+                        <h3>Luiza</h3>
+                        <h3>0%</h3>
                         <div class="barra">
                             <div class="progresso lu"></div>
                         </div>
                     </div>
                 </div>
                 <div class="corredores">
-                    <img src="Imagens/icone-ber.png" alt="">
+                    <img src="Imagens/Aba corrida/icone-ber.png" alt="">
                     <div>
-                        <h3>Bernardo 0%</h3>
+                        <h3>Bernardo</h3>
+                        <h3>0%</h3>
                         <div class="barra">
                             <div class="progresso ber"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="corredores">
+                    <img src="Imagens/Aba corrida/Icone-Leticia.png" alt="">
+                    <div>
+                        <h3>Leticia</h3>
+                        <h3>0%</h3>
+                        <div class="barra">
+                            <div class="progresso matheus"></div>
                         </div>
                     </div>
                 </div>
@@ -139,6 +179,7 @@
         </div>
 
 
+        <!--Logo do Tartan Flutuante-->
         <div class="logoTartan">
             <img src="Imagens/Logo_Tartan.png" alt="">
         </div>

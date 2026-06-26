@@ -92,6 +92,7 @@ body{
     flex-direction: column;
     display: flex;
     align-items: center;
+    z-index: 1000;
 }
 
 .sidebar h2{
@@ -179,7 +180,15 @@ body{
     float: right;
 }
 
+
+
         /*Noticias*/
+
+.noticias img{
+    height: 700px;
+}
+
+
 
         /*Membros*/
 
@@ -203,27 +212,37 @@ body{
 .jovens{
     display: flex;
     color: #F6BE28;
-    width: 800px;
-    height: 400px;
+    width: 40%;
+    height: 350px;
     border-radius: 10px;
     border: solid;
     align-items: center;
     transition: transform 0.3s ease;
     cursor: pointer;
     
+    
 }
 
 .jovens img{
-    width: 300px;
-    height: 400px;
+    width: 263px;
+    height: 350px;
     border: solid;
-    border-top: none;
+    border-left: none;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
 .jovens:hover{
     transform: scale(1.01);
+}
+
+.infoJovens{
+    display: flex;
+    height: 310px;
+    width: 60%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around 10px;
 }
 
 .logoTartan{
@@ -239,6 +258,14 @@ body{
 
 
         /*Corrida pela Insigignia*/
+
+.corrida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    flex-wrap: wrap;
+}
 
 .corredores{
     margin-bottom: 30px;
@@ -260,6 +287,7 @@ body{
     background-color: #121212;
     border: #121212;
     border-radius: 10px;
+    margin-bottom: 3%;
 }
 
 .progresso{
@@ -292,6 +320,10 @@ body{
     background-color: #121212;
 }
 
+.dark .corredores{
+    color: #F6BE28;
+}
+
 .dark .barra{
-    background-color: #f4f4f4;
+    background-color: #E0E0E0;
 }
