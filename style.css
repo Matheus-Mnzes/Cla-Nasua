@@ -194,17 +194,17 @@ body{
 
 .membros{
     display: flex;
+    gap:30px;
     justify-content: center;
     align-items: center;
-    gap:30px
+    flex-wrap: wrap;
 }
 
 .jovens{
     display: flex;
-    flex-direction: column;
-    background-color: #F6BE28;
-    width: 300px;
-    height: 470px;
+    color: #F6BE28;
+    width: 800px;
+    height: 400px;
     border-radius: 10px;
     border: solid;
     align-items: center;
@@ -223,7 +223,7 @@ body{
 }
 
 .jovens:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .logoTartan{
