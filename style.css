@@ -1,3 +1,5 @@
+        /*Geral*/
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -6,7 +8,7 @@
     color 0.4s ease;
 }
 
-.body{
+body{
     border: none;
     background-color: #f4f4f4;
     padding: none;
@@ -14,26 +16,25 @@
 
 .container{
     align-items: center;
-    background-color: #f4f4f4;
-    height: 100vw;
+    background-color: #f4f4f4 ;
+    min-height: 100vh;
 }
 
 .menu{
-    display: flex;
-    
+    display: grid;
+    grid-template-columns: 60px 1fr 60px;
+    align-items: center;
+    padding: 0 20px;
     background-color: #1a1a1a;
-    
     height: 60px;
+    margin-bottom: 20px;
 }
 
 .lateral{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
-    margin-right: 560px;
+    flex: 1;
 }
 .abas{
+    flex: 1;
     display: flex;
     gap: 30px;
     justify-content: center;
@@ -54,13 +55,16 @@
     transition: color 0s ease;
 }
 
+
+
+        /*Sidebar*/
+
 .abresidebarBttn{
     color: white;
     font-size: 30px;
     background: none;
     border: none;
     cursor: pointer;
-    margin-right: 100px;
     left: 15px;
 }
 
@@ -114,6 +118,11 @@
     left: 0;
 }
 
+
+
+
+        /*Sistema Abas*/
+
 .aba{
     display: none;
 }
@@ -125,17 +134,20 @@
     align-items: center;
 }
 
+
+        /*Home*/
+
 .cabeçalho{
     background-color: #F6BE28;
     color:black;
     height: 400px;
-    width: 1400px;
+    width: 90%;
+    max-width: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 30px;
-    margin-top: 30px;
 }
 
 .cabeçalho img{
@@ -167,19 +179,21 @@
     float: right;
 }
 
-.cabeçalhoSecundario{
+        /*Noticias*/
+
+        /*Membros*/
+
+.linhaAmarela{
+    width: 95vw;
+    height: 13px;
     background-color: #F6BE28;
-    height: 100px;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .membros{
     display: flex;
-    margin-top: 50px;
     justify-content: center;
     align-items: center;
     gap:30px
@@ -223,8 +237,52 @@
     width: 90px;
 }
 
-  /*Dark Mode*/
 
+        /*Corrida pela Insigignia*/
+
+.corredores{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    border:solid;
+    border-radius: 10px;
+    width: 450px;
+}
+.corredores img{
+    width: 60px;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.barra{
+    width: 300px;
+    height: 10px;
+    background-color: #121212;
+    border: #121212;
+    border-radius: 10px;
+}
+
+.progresso{
+    height: 10px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.progresso.matheus{
+    width: 75%;
+}
+.progresso.isa{
+    width: 50%;
+}
+.progresso.lu{
+    width: 10%;
+}
+.progresso.ber{
+    width: 10%;
+}
+
+
+  /*Dark Mode*/
 
 .dark{
     color: #E0E0E0;
@@ -232,4 +290,8 @@
 
 .dark .container{
     background-color: #121212;
+}
+
+.dark .barra{
+    background-color: #f4f4f4;
 }
