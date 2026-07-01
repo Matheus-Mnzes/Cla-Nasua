@@ -1,7 +1,15 @@
-function abrirAba(id){
+function abrirAba(id, botao){
     document.querySelectorAll(".aba").forEach(aba => {aba.classList.remove("ativa")});
 
     document.getElementById(id).classList.add("ativa")
+
+    document.querySelectorAll(".menuBttn").forEach(menuBotao => {
+        menuBotao.classList.remove("ativo");
+    });
+
+    if(botao){
+        botao.classList.add("ativo");
+    }
     
     document.getElementById("sidebar").classList.remove("aberta")
 
