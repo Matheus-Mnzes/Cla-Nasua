@@ -9,275 +9,230 @@
 </head>
 <body>
     <div class="container">
-
-        <!--Menu de Abas-->
         <header class="menu">
-            <div class="lateral">
-                <button onclick=" abrirSidebar()" class="abresidebarBttn">☰</button>  
-            </div>
+            <button onclick="abrirSidebar()" class="abresidebarBttn">☰</button>
+
             <div class="abas">
-                <button onclick=" abrirAba('home')" class="menuBttn">Home</button>
-                <button onclick=" abrirAba('noticias')" class="menuBttn">Noticias</button>
-                <button onclick=" abrirAba('membros')" class="menuBttn">Membros</button>
-                <button onclick=" abrirAba('projetos')" class="menuBttn">Projetos</button>
-                <button onclick=" abrirAba('insignia')" class="menuBttn">Insignia de B.P.</button>
+                <button onclick="abrirAba('home', this)" class="menuBttn ativo">Home</button>
+                <button onclick="abrirAba('noticias', this)" class="menuBttn">Notícias</button>
+                <button onclick="abrirAba('membros', this)" class="menuBttn">Membros</button>
+                <button onclick="abrirAba('projetos', this)" class="menuBttn">Projetos</button>
+                <button onclick="abrirAba('insignia', this)" class="menuBttn">Insígnia de B.P.</button>
             </div>
-            <div></div>
         </header>
 
-
-        <!--Sidebar-->
-        <div id="sidebar" class="sidebar">
-            <button onclick=" abrirSidebar()" class="abresidebarBttn2">☰</button>  
+        <aside id="sidebar" class="sidebar">
+            <button onclick="abrirSidebar()" class="abresidebarBttn2">☰</button>
             <h2>Menu Lateral</h2>
             <button onclick="modoEscuro()" class="sidebarButton">Modo Escuro</button>
-        </div>
+        </aside>
 
+        <section id="home" class="aba ativa">
+            <div class="hero">
+                <div class="heroTexto">
+                    <span class="etiqueta">Clã Pioneiro Nasua</span>
+                    <h1>Serviço, aventura e liderança em movimento.</h1>
+                    <p>Seja bem-vindo ao site do Clã Nasua, espaço para reunir nossas histórias, projetos, membros e conquistas.</p>
+                    <div class="heroBotoes">
+                        <button onclick="abrirAba('projetos')" class="botao primario">Ver projetos</button>
+                        <button onclick="abrirAba('membros')" class="botao secundario">Conhecer o clã</button>
+                        <button class="botao primario">Quero entrar para o Clã</button>
+                    </div>
+                </div>
 
-        <!--Aba Home-->
-        <div id="home" class="aba ativa">
-            <div class="cabeçalho">
-                <h1><strong>Site do Clã Nasua</strong></h1>
-                <h3><strong>Seja bem vindo ao site do Clã Nasua</strong></h3> 
-                <img src="Imagens/Emoji-Quati_Joia_Escoteiro.png" alt="">
+                <div class="heroImagem">
+                    <img src="Imagens/Emoji-Quati_Joia_Escoteiro.png" alt="Mascote do Clã Nasua">
+                </div>
+            </div>
+
+            <div class="valores">
+                <div><span>01</span><h3>Serviço</h3><p>Projetos com impacto real na comunidade.</p></div>
+                <div><span>02</span><h3>Liderança</h3><p>Jovens planejando, decidindo e executando.</p></div>
+                <div><span>03</span><h3>Aventura</h3><p>Vivências ao ar livre com propósito.</p></div>
+                <div><span>04</span><h3>Fraternidade</h3><p>Um clã feito de amizade e compromisso.</p></div>
             </div>
 
             <div class="principal">
-
                 <div class="sobre">
-                    <h1>Sobre o Clã</h1>
-                    <p>O Clã Pioneiro Nasua foi criado com o propósito de oferecer aos jovens um ambiente onde pudessem vivenciar plenamente o Ramo Pioneiro, desenvolvendo autonomia, liderança, espírito de serviço e compromisso com a comunidade. Sua fundação surgiu da necessidade de proporcionar uma continuidade na jornada escoteira dos jovens do Grupo Escoteiro Tartan Negro, mantendo vivos os valores do Movimento Escoteiro e fortalecendo o protagonismo juvenil.</p>
-                    <p>Inspirado no quati (Nasua), animal conhecido por sua inteligência, curiosidade, capacidade de adaptação e vida em grupo, o Clã adotou esse símbolo como representação dos princípios que busca cultivar em seus membros. Desde sua criação, o Clã Nasua tem como missão formar pioneiros comprometidos com seu crescimento pessoal, com o serviço ao próximo e com a construção de uma sociedade mais justa e solidária.</p>
-                    <img src="Imagens/Aba Home/Clã.png" alt="">
+                    <div class="sobreTexto">
+                        <span class="etiqueta escura">Sobre o Clã</span>
+                        <h2>Uma jornada pioneira com identidade própria.</h2>
+                        <p>O Clã Pioneiro Nasua foi criado com o propósito de oferecer aos jovens um ambiente onde pudessem vivenciar plenamente o Ramo Pioneiro, desenvolvendo autonomia, liderança, espírito de serviço e compromisso com a comunidade.</p>
+                        <p>Inspirado no quati, animal conhecido por sua inteligência, curiosidade, capacidade de adaptação e vida em grupo, o Clã adotou esse símbolo como representação dos princípios que busca cultivar em seus membros.</p>
+                    </div>
+                    <img src="Imagens/Aba Home/Clã.png" alt="Imagem do Clã Nasua">
                 </div>
 
-                <div class="sobre">
-                    <h1>Sobre o Grupo</h1>
-                    <p>O Grupo Escoteiro Tartan Negro foi fundado em 2020 por um grupo de chefes escoteiros que decidiu criar uma nova unidade do zero, inspirada na cultura e nas tradições da Escócia. Desde sua criação, o grupo busca preservar essa identidade temática em suas atividades, símbolos e valores, proporcionando aos seus membros uma experiência escoteira única e marcante.</p>
-                    <img src="Imagens/Aba Home/Grupo.png" alt="">
+                <div class="sobre invertido">
+                    <div class="sobreTexto">
+                        <span class="etiqueta escura">Sobre o Grupo</span>
+                        <h2>Tradição escoteira com inspiração escocesa.</h2>
+                        <p>O Grupo Escoteiro Tartan Negro foi fundado em 2020 por chefes escoteiros que decidiram criar uma nova unidade inspirada na cultura e nas tradições da Escócia.</p>
+                    </div>
+                    <img src="Imagens/Aba Home/Grupo.png" alt="Imagem do Grupo Escoteiro Tartan Negro">
                 </div>
             </div>
-        </div>
+        </section>
 
-
-        <!--Aba Noticias do Clã-->
-        <div id="noticias" class="aba">
+        <section id="noticias" class="aba">
             <div class="containerAbas">
-                <h1><strong>Noticias do Clã</strong></h1>
+                <span class="etiqueta escura">Novidades</span>
+                <h1>Notícias do Clã</h1>
                 <div class="linhaAmarela"></div>
+
                 <div class="noticias">
-                    <div>
-                        <img src="Imagens/Aba Noticias/Anuncio 1.jpeg" alt="">
-                    </div>   
-                    <div> 
-                        <img src="Imagens/Aba Noticias/Noticia1.jpeg" alt="">
+                    <div class="cardNoticia">
+                        <img src="Imagens/Aba Noticias/Anuncio 1.jpeg" alt="Anúncio do Clã">
+                        <div>
+                            <span>Comunicado</span>
+                            <h3>Venda de Doces</h3>
+                        </div>
+                    </div>
+
+                    <div class="cardNoticia">
+                        <img src="Imagens/Aba Noticias/Noticia1.jpeg" alt="Notícia do Clã">
+                        <div>
+                            <span>Notícia</span>
+                            <h3>Criação do Clã</h3>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-
-        <!--Aba Membro do Clã-->
-        <div id="membros" class="aba">
+        <section id="membros" class="aba">
             <div class="containerAbas">
-                <h1><strong>Membros do Clã</strong></h1>
+                <span class="etiqueta escura">Equipe</span>
+                <h1>Membros do Clã</h1>
                 <div class="linhaAmarela"></div>
 
                 <div class="membros">
                     <div class="jovens">
-                        <img src="Imagens/Aba membros/Matheus.png" alt="">
+                        <img src="Imagens/Aba membros/Matheus.png" alt="Matheus">
                         <div class="infoJovens">
                             <h3>Matheus de Menezes</h3>
-                            <p>Atual Presidente da COMAD</p><br><br>
-                            <ul>
-                                <li>Jiujiteiro</li>
-                                <li>Futuro programador</li>
-                                <li>Jogador de RPG</li>
-                                <li>Namorado da Lele</li>
-                                <li>Nerd</li>
-                                <li>Escoteiro da Pátria</li>
-                            </ul>
+                            <p>Atual Presidente da COMAD</p>
+                            <div class="tags"><span>Jiujiteiro</span><span>RPG</span><span>Programação</span><span>Namorado da Lele</span><span>Escoteiro da Pátria</span></div>
                         </div>
                     </div>
 
                     <div class="jovens">
-                        <img src="Imagens/Aba membros/Isadora.png" alt="">
+                        <img src="Imagens/Aba membros/Isadora.png" alt="Isadora">
                         <div class="infoJovens">
                             <h3>Isadora Ribeiro</h3>
-                            <p>Atual Vice Presidente da COMAD</p><br><br>
-                            <ul>
-                                <li>Apaixonada por Harry Potter</li>
-                                <li>Cursa Ciência da Computação</li>
-                                <li>Ama violão, RPG e Futebol</li>
-                                <li>Escoteira da Pátria</li>
-                            </ul>
+                            <p>Atual Vice Presidente da COMAD</p>
+                            <div class="tags"><span>Harry Potter</span><span>Computação</span><span>Violão</span><span>RPG</span><span>Futebol</span><span>Escoteira da Pátria</span></div>
                         </div>
                     </div>
 
                     <div class="jovens">
-                        <img src="Imagens/Aba membros/Luiza.png" alt="">
+                        <img src="Imagens/Aba membros/Luiza.png" alt="Luíza">
                         <div class="infoJovens">
-                            <h3>Luíza Rodriguez</h3><br><br><br>
-                            <ul>
-                                <li>Irmã do Ber</li>
-                                <li>Atleta de Vôlei</li>
-                                <li>Futura Veterinária</li>
-                            </ul>
+                            <h3>Luíza Rodriguez</h3>
+                            <p>Pioneira do Clã Nasua</p>
+                            <div class="tags"><span>Vôlei</span><span>Veterinária</span><span>Irmã do Ber</span></div>
                         </div>
                     </div>
 
                     <div class="jovens">
-                        <img src="Imagens/Aba membros/Bernardo.png" alt="">
+                        <img src="Imagens/Aba membros/Bernardo.png" alt="Bernardo">
                         <div class="infoJovens">
-                            <h3>Bernardo Rodriguez</h3><br><br><br>
-                            <ul>
-                                <li>Irmão da Lu</li>
-                                <li>Gosta de RPG, Mangá e Videogame</li>
-                                <li>Futuro Radiologista</li>
-                            </ul>
+                            <h3>Bernardo Rodriguez</h3>
+                            <p>Pioneiro do Clã Nasua</p>
+                            <div class="tags"><span>RPG</span><span>Mangá</span><span>Videogame</span><span>Radiologia</span><span>Irmão da Lu</span></div>
                         </div>
                     </div>
                 </div>
-            </div>    
-        </div>
-
-
-        <!--Aba Projetos do Clã-->
-        <div id="projetos" class="aba">
-            <div class="containerAbas">
-                <h1><strong>Projetos do Clã</strong></h1>
-                <div class="linhaAmarela"></div>
-                <div class="projetoDestaque">
-    <div>
-        <span class="statusProjeto">Em andamento</span>
-        <h2>Projeto Comunitário 2026</h2>
-        <p>
-            Ação organizada pelo Clã Nasua para apoiar a comunidade local,
-            desenvolvendo serviço, liderança e trabalho em equipe.
-        </p>
-    </div>
-</div>
-
-<div class="filtrosProjetos">
-    <button>Todos</button>
-    <button>Ambiental</button>
-    <button>Social</button>
-    <button>Aventura</button>
-</div>
-
-<div class="listaProjetos">
-    <div class="cardProjeto">
-        <h3>Mutirão Ambiental</h3>
-        <p>Limpeza e cuidado de uma área verde da comunidade.</p>
-        <span>Ambiental</span>
-    </div>
-
-    <div class="cardProjeto">
-        <h3>Campanha Solidária</h3>
-        <p>Arrecadação de alimentos, roupas ou materiais escolares.</p>
-        <span>Social</span>
-    </div>
-
-    <div class="cardProjeto">
-        <h3>Trilha Pioneira</h3>
-        <p>Atividade de aventura com planejamento feito pelos jovens.</p>
-        <span>Aventura</span>
-    </div>
-</div>
             </div>
-        </div>
+        </section>
 
-
-        <!--Aba Corrida a Insignia de B.P.-->
-        <div id="insignia" class="aba">
+        <section id="projetos" class="aba">
             <div class="containerAbas">
-                <h1><strong>Corrida pela Insignia de B.P.</strong></h1>
+                <span class="etiqueta escura">Ação</span>
+                <h1>Projetos do Clã</h1>
+                <div class="linhaAmarela"></div>
+
+                <div class="projetoDestaque">
+                    <div>
+                        <span class="statusProjeto">Em andamento</span>
+                        <h2>Projeto Comunitário 2026</h2>
+                        <p>Ação organizada pelo Clã Nasua para apoiar a comunidade local, desenvolvendo serviço, liderança e trabalho em equipe.</p>
+                    </div>
+                    <div class="impactosProjeto">
+                        <strong>20</strong><span>voluntários</span>
+                        <strong>4h</strong><span>de serviço</span>
+                    </div>
+                </div>
+
+                <div class="filtrosProjetos">
+                    <button onclick="mudaProjetos('todos')">Todos</button>
+                    <button onclick="mudaProjetos('ambiental')">Ambiental</button>
+                    <button onclick="mudaProjetos('social')">Social</button>
+                    <button onclick="mudaProjetos('aventura')">Aventura</button>
+                    <button onclick="mudaProjetos('financeiro')">Financeiro</button>
+                    <button onclick="mudaProjetos('interesse')">Grupos de Interesse</button>
+                </div>
+
+                <div class="listaProjetos">
+                    <div class="cardProjeto" data-categoria="aventura">
+                        <span>Aventura</span>
+                        <h3>Primeiro Acampamento</h3>
+                        <p>Primeiro Acampamento do Clã, programado pelos jovens para confratenizar.</p>
+                    </div>
+                    <div class="cardProjeto" data-categoria="financeiro">
+                        <span>Financeiro</span>
+                        <h3>Dinheiro para a Bandeira</h3>
+                        <p>Arrecadação de dinheiro para fazer nossa bandeira, atravez da venda de doces.</p>
+                    </div>
+                    <div class="cardProjeto" data-categoria="aventura">
+                        <span>Aventura</span>
+                        <h3>Subida ao Torre Amarela</h3>
+                        <p>Acampamento com subida ao morro Torre Amarela com planejamento feito pelos jovens.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="insignia" class="aba">
+            <div class="containerAbas">
+                <span class="etiqueta escura">Progresso</span>
+                <h1>Corrida pela Insígnia de B.P.</h1>
                 <div class="linhaAmarela"></div>
 
                 <div class="corrida">
-                    <div class="corredores">
-                        <img src="Imagens/Aba corrida/Icone-Matheus.png" alt="">
-                        <div>
-                            <h3>Matheus</h3>
-                            <h3>0%</h3>
-                            <div class="barra">
-                                <div class="progresso matheus"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="corredores">
-                        <img src="Imagens/Aba corrida/Icone-isa.png" alt="">
-                        <div>
-                            <h3>Isadora</h3>
-                            <h3>0%</h3>
-                            <div class="barra">
-                                <div class="progresso isa"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="corredores">
-                        <img src="Imagens/Aba corrida/Icone-lu.png" alt="">
-                        <div>
-                            <h3>Luiza</h3>
-                            <h3>0%</h3>
-                            <div class="barra">
-                                <div class="progresso lu"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="corredores">
-                        <img src="Imagens/Aba corrida/icone-ber.png" alt="">
-                        <div>
-                            <h3>Bernardo</h3>
-                            <h3>0%</h3>
-                            <div class="barra">
-                                <div class="progresso ber"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="corredores">
-                        <img src="Imagens/Aba corrida/Icone-Leticia.png" alt="">
-                        <div>
-                            <h3>Leticia</h3>
-                            <h3>0%</h3>
-                            <div class="barra">
-                                <div class="progresso matheus"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="corredores"><img src="Imagens/Aba corrida/Icone-Matheus.png" alt=""><div><div class="linhaProgresso"><h3>Matheus</h3><strong>75%</strong></div><div class="barra"><div class="progresso matheus"></div></div></div></div>
+                    <div class="corredores"><img src="Imagens/Aba corrida/Icone-isa.png" alt=""><div><div class="linhaProgresso"><h3>Isadora</h3><strong>50%</strong></div><div class="barra"><div class="progresso isa"></div></div></div></div>
+                    <div class="corredores"><img src="Imagens/Aba corrida/Icone-lu.png" alt=""><div><div class="linhaProgresso"><h3>Luíza</h3><strong>10%</strong></div><div class="barra"><div class="progresso lu"></div></div></div></div>
+                    <div class="corredores"><img src="Imagens/Aba corrida/icone-ber.png" alt=""><div><div class="linhaProgresso"><h3>Bernardo</h3><strong>10%</strong></div><div class="barra"><div class="progresso ber"></div></div></div></div>
+                    <div class="corredores"><img src="Imagens/Aba corrida/Icone-Leticia.png" alt=""><div><div class="linhaProgresso"><h3>Letícia</h3><strong>75%</strong></div><div class="barra"><div class="progresso matheus"></div></div></div></div>
                 </div>
-            </div>    
-        </div>
+            </div>
+        </section>
 
-
-        <!--Rodapé-->
         <footer class="rodape">
-            <img src="Imagens/Marca dágua do clã.png" alt="">
+            <img src="Imagens/Marca dágua do clã.png" alt="Marca do Clã">
             <div>
-                <h3>Contato:</h3>
-                <a href="https://www.instagram.com/cla_tartannegro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" style="color: white;">instagram</a><br>
-                <a href="mailto:cla.nasua.tartannegro@gmail.com" style="color: white;">E-mail</a>
+                <h3>Contato</h3>
+                <a href="https://www.instagram.com/cla_tartannegro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a><br>
+                <a href="mailto:cla.nasua.tartannegro@gmail.com">E-mail</a>
             </div>
             <div>
-                <h3>Atividades:</h3>
+                <h3>Atividades</h3>
                 <p>Sábado às 14:00h</p>
                 <p>Rua Santa Madalena Sofia Barat, 701 Alto, Curitiba - CEP: 82820-490.</p>
             </div>
             <div>
                 <p>Desenvolvido por:</p>
                 <p>Matheus de Menezes</p>
-                <p>Versão: 1.0.0</p>
+                <p>Versão: 2.0.0</p>
             </div>
         </footer>
 
-
-        <!--Logo do Tartan Flutuante-->
         <div class="logoTartan">
-            <img src="Imagens/Logo_Tartan.png" alt="">
+            <img src="Imagens/Logo_Tartan.png" alt="Logo Tartan">
         </div>
-
-
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -21,6 +21,17 @@ function abrirSidebar(){
     document.getElementById("sidebar").classList.toggle("aberta")
 }
 
+function mudaProjetos(categoria){
+    document.querySelectorAll(".cardProjeto").forEach(cardProjeto =>{
+
+        if(categoria === "todos" || cardProjeto.dataset.categoria === categoria){
+           cardProjeto.classList.remove("inativo");
+        }else{
+            cardProjeto.classList.add("inativo");
+        }
+
+    });
+}
 
 function modoEscuro(){
     document.body.classList.toggle("dark")
