@@ -1,9 +1,11 @@
-function abrirAba(id,id2){
+function abrirAba(id){
     document.querySelectorAll(".aba").forEach(aba => {aba.classList.remove("ativa")});
 
     document.getElementById(id).classList.add("ativa")
     
     document.getElementById("sidebar").classList.remove("aberta")
+
+    window.scrollTo({top: 0})
 }
 
 

@@ -190,9 +190,21 @@ body{
     flex-direction: column;
 }
 
+.sobre h1{
+    margin-bottom: 10px;
+}
+
+.sobre p{
+    text-indent: 2em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
 .sobre img{
-    width: 100px;
-    float: right;
+    width: 500px;
+    align-self: center;
+    margin-bottom: 80px;
 }
 
 
