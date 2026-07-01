@@ -16,11 +16,11 @@
                 <button onclick=" abrirSidebar()" class="abresidebarBttn">☰</button>  
             </div>
             <div class="abas">
-                <button onclick=" abrirAba('home'), fecharSidebar()" class="menuBttn">Home</button>
-                <button onclick=" abrirAba('noticias'), fecharSidebar()" class="menuBttn">Noticias</button>
-                <button onclick=" abrirAba('membros'), fecharSidebar()" class="menuBttn">Membros</button>
-                <button onclick=" abrirAba('projetos'), fecharSidebar()" class="menuBttn">Projetos</button>
-                <button onclick=" abrirAba('insignia'), fecharSidebar()" class="menuBttn">Insignia de B.P.</button>
+                <button onclick=" abrirAba('home')" class="menuBttn">Home</button>
+                <button onclick=" abrirAba('noticias')" class="menuBttn">Noticias</button>
+                <button onclick=" abrirAba('membros')" class="menuBttn">Membros</button>
+                <button onclick=" abrirAba('projetos')" class="menuBttn">Projetos</button>
+                <button onclick=" abrirAba('insignia')" class="menuBttn">Insignia de B.P.</button>
             </div>
             <div></div>
         </header>
@@ -53,6 +53,7 @@
                 <div class="sobre">
                     <h1>Sobre nosso Grupo</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, minima inventore saepe maxime soluta rerum autem. Ratione ducimus maiores numquam molestiae animi illum provident. Dolor id iure corporis quidem?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur reiciendis ea amet hic natus alias, consequatur, asperiores inventore quia maxime doloribus accusantium omnis odit incidunt at, odio eos temporibus. Error.</p>
                     <img src="Imagens/Emoji_Quati_Joia.png" alt="">
                 </div>
             </div>
@@ -61,15 +62,16 @@
 
         <!--Aba Noticias do Clã-->
         <div id="noticias" class="aba">
-            <h1><strong>Noticias do Clã</strong></h1>
-            <div class="linhaAmarela"></div>
-
-            <div class="noticias">
-                <div>
-                    <img src="Imagens/Anuncio 1.jpeg" alt="">
-                </div>   
-                <div> 
-                    <img src="Imagens/Noticia1.jpeg" alt="">
+            <div class="containerAbas"></div>
+                <h1><strong>Noticias do Clã</strong></h1>
+                <div class="linhaAmarela">
+                <div class="noticias">
+                    <div>
+                        <img src="Imagens/Anuncio 1.jpeg" alt="">
+                    </div>   
+                    <div> 
+                        <img src="Imagens/Noticia1.jpeg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -77,105 +79,137 @@
 
         <!--Aba Membro do Clã-->
         <div id="membros" class="aba">
-            <h1><strong>Membros do Clã</strong></h1>
-            <div class="linhaAmarela"></div>
+            <div class="containerAbas">
+                <h1><strong>Membros do Clã</strong></h1>
+                <div class="linhaAmarela"></div>
 
-            <div class="membros">
-                <div class="jovens">
-                    <img src="Imagens/Aba membros/Matheus.jpeg" alt="">
-                    <div class="infoJovens">
-                        <h3>Matheus de Menezes</h3>
-                        <p>Atual Presidente da Cumade</p>
+                <div class="membros">
+                    <div class="jovens">
+                        <img src="Imagens/Aba membros/Matheus.png" alt="">
+                        <div class="infoJovens">
+                            <h3>Matheus de Menezes</h3>
+                            <p>Atual Presidente da COMAD</p><br><br>
+                            <ul>
+                                <li>Jiujiteiro</li>
+                                <li>Futuro programador</li>
+                                <li>Jogador de RPG</li>
+                                <li>Namorado da Lele</li>
+                                <li>Nerd</li>
+                                <li>Escoteiro da Pátria</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="jovens">
+                        <img src="Imagens/Aba membros/Isadora.png" alt="">
+                        <div class="infoJovens">
+                            <h3>Isadora Ribeiro</h3>
+                            <p>Atual Vice Presidente da COMAD</p><br><br>
+                            <ul>
+                                <li>Apaixonada por Harry Potter</li>
+                                <li>Cursa Ciência da Computação</li>
+                                <li>Ama violão, RPG e Futebol</li>
+                                <li>Escoteira da Pátria</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="jovens">
+                        <img src="Imagens/Aba membros/Luiza.png" alt="">
+                        <div class="infoJovens">
+                            <h3>Luíza Rodriguez</h3><br><br><br>
+                            <ul>
+                                <li>Irmã do Ber</li>
+                                <li>Atleta de Vôlei</li>
+                                <li>Futura Veterinária</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="jovens">
+                        <img src="Imagens/Aba membros/Bernardo.png" alt="">
+                        <div class="infoJovens">
+                            <h3>Bernardo Rodriguez</h3><br><br><br>
+                            <ul>
+                                <li>Irmão da Lu</li>
+                                <li>Gosta de RPG, Mangá e Videogame</li>
+                                <li>Futuro Radiologista</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="jovens">
-                    <img src="Imagens/Aba membros/Isadora.jpeg" alt="">
-                    <div class="infoJovens">
-                        <h3>Isadora Ribeiro</h3>
-                        <p>Atual Vice Presidente da Cumade</p>
-                    </div>
-                </div>
-                <div class="jovens">
-                    <img src="Imagens/Aba membros/Luiza.jpeg" alt="">
-                    <div class="infoJovens">
-                        <h3>Luíza Rodriguez</h3>
-                    </div>
-                </div>
-                <div class="jovens">
-                    <img src="Imagens/Aba membros/Bernardo.jpeg" alt="">
-                    <div class="infoJovens">
-                        <h3>Bernardo Rodriguez</h3>
-                    </div>
-                </div>
-            </div>
+            </div>    
         </div>
 
 
         <!--Aba Projetos do Clã-->
         <div id="projetos" class="aba">
-            <h1><strong>Projetos do Clã</strong></h1>
-            <div class="linhaAmarela">
+            <div class="containerAbas">
+                <h1><strong>Projetos do Clã</strong></h1>
+                <div class="linhaAmarela"></div>
             </div>
         </div>
 
 
         <!--Aba Corrida a Insignia de B.P.-->
         <div id="insignia" class="aba">
-            <h1><strong>Corrida pela Insignia de B.P.</strong></h1>
-            <div class="linhaAmarela"></div>
+            <div class="containerAbas">
+                <h1><strong>Corrida pela Insignia de B.P.</strong></h1>
+                <div class="linhaAmarela"></div>
 
-            <div class="corrida">
-                <div class="corredores">
-                    <img src="Imagens/Aba corrida/Icone-Matheus.png" alt="">
-                    <div>
-                        <h3>Matheus</h3>
-                        <h3>0%</h3>
-                        <div class="barra">
-                            <div class="progresso matheus"></div>
+                <div class="corrida">
+                    <div class="corredores">
+                        <img src="Imagens/Aba corrida/Icone-Matheus.png" alt="">
+                        <div>
+                            <h3>Matheus</h3>
+                            <h3>0%</h3>
+                            <div class="barra">
+                                <div class="progresso matheus"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="corredores">
+                        <img src="Imagens/Aba corrida/Icone-isa.png" alt="">
+                        <div>
+                            <h3>Isadora</h3>
+                            <h3>0%</h3>
+                            <div class="barra">
+                                <div class="progresso isa"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="corredores">
+                        <img src="Imagens/Aba corrida/Icone-lu.png" alt="">
+                        <div>
+                            <h3>Luiza</h3>
+                            <h3>0%</h3>
+                            <div class="barra">
+                                <div class="progresso lu"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="corredores">
+                        <img src="Imagens/Aba corrida/icone-ber.png" alt="">
+                        <div>
+                            <h3>Bernardo</h3>
+                            <h3>0%</h3>
+                            <div class="barra">
+                                <div class="progresso ber"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="corredores">
+                        <img src="Imagens/Aba corrida/Icone-Leticia.png" alt="">
+                        <div>
+                            <h3>Leticia</h3>
+                            <h3>0%</h3>
+                            <div class="barra">
+                                <div class="progresso matheus"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="corredores">
-                    <img src="Imagens/Aba corrida/Icone-isa.png" alt="">
-                    <div>
-                        <h3>Isadora</h3>
-                        <h3>0%</h3>
-                        <div class="barra">
-                            <div class="progresso isa"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="corredores">
-                    <img src="Imagens/Aba corrida/Icone-lu.png" alt="">
-                    <div>
-                        <h3>Luiza</h3>
-                        <h3>0%</h3>
-                        <div class="barra">
-                            <div class="progresso lu"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="corredores">
-                    <img src="Imagens/Aba corrida/icone-ber.png" alt="">
-                    <div>
-                        <h3>Bernardo</h3>
-                        <h3>0%</h3>
-                        <div class="barra">
-                            <div class="progresso ber"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="corredores">
-                    <img src="Imagens/Aba corrida/Icone-Leticia.png" alt="">
-                    <div>
-                        <h3>Leticia</h3>
-                        <h3>0%</h3>
-                        <div class="barra">
-                            <div class="progresso matheus"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>    
         </div>
 
 
