@@ -138,6 +138,7 @@ body{
 .aba.ativa{
     display: block;
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: center;
 }
@@ -341,6 +342,30 @@ body{
 }
 .progresso.ber{
     width: 10%;
+}
+
+
+
+  /*Rodapé*/
+
+.rodape{
+    margin-top: auto;
+    background-color: #121212;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.rodape img{
+    width: 200px;
+}
+
+.rodape div{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
