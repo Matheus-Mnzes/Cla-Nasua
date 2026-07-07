@@ -10,6 +10,9 @@
 <body>
     <div class="container">
         <header class="menu">
+
+
+            <!--Menu Abas-->
             <button onclick="abrirSidebar()" class="abresidebarBttn">☰</button>
 
             <div class="abas">
@@ -21,12 +24,16 @@
             </div>
         </header>
 
+
+        <!--Menu Lateral-->
         <aside id="sidebar" class="sidebar">
             <button onclick="abrirSidebar()" class="abresidebarBttn2">☰</button>
             <h2>Menu Lateral</h2>
             <button onclick="modoEscuro()" class="sidebarButton">Modo Escuro</button>
         </aside>
 
+
+        <!--Home-->
         <section id="home" class="aba ativa">
             <div class="hero">
                 <div class="heroTexto">
@@ -36,7 +43,22 @@
                     <div class="heroBotoes">
                         <button onclick="abrirAba('projetos')" class="botao primario">Ver projetos</button>
                         <button onclick="abrirAba('membros')" class="botao secundario">Conhecer o clã</button>
-                        <button class="botao primario">Quero entrar para o Clã</button>
+                        <button onclick="abrirModalEntrada()" class="botao primario">Quero entrar para o Clã</button>
+                    </div>
+                </div>
+
+                <div id="modalEntrada" class="fundoModal" onclick="fecharModalEntrada()">
+                    <div class="modalEntrada" onclick="event.stopPropagation()">
+                        <button class="fecharModal" onclick="fecharModalEntrada()">X</button>
+
+                        <span class="etiqueta escura">Entrada no Clã</span>
+                        <h2>Quer entrar para o Clã Nasua?</h2>
+                        <p>Entre em contato pelo Instagram ou pelo e-mail do Clã para conversar com a equipe e saber como participar das atividades.</p>
+
+                        <div class="modalLinks">
+                            <a href="https://www.instagram.com/cla_tartannegro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram do Clã</a>
+                            <a href="mailto:cla.nasua.tartannegro@gmail.com">Enviar e-mail</a>
+                        </div>
                     </div>
                 </div>
 
@@ -74,6 +96,8 @@
             </div>
         </section>
 
+
+        <!--Notícias-->
         <section id="noticias" class="aba">
             <div class="containerAbas">
                 <span class="etiqueta escura">Novidades</span>
@@ -100,6 +124,8 @@
             </div>
         </section>
 
+
+        <!--Membros-->
         <section id="membros" class="aba">
             <div class="containerAbas">
                 <span class="etiqueta escura">Equipe</span>
@@ -146,6 +172,8 @@
             </div>
         </section>
 
+
+        <!--Projetos-->
         <section id="projetos" class="aba">
             <div class="containerAbas">
                 <span class="etiqueta escura">Ação</span>
@@ -156,11 +184,11 @@
                     <div>
                         <span class="statusProjeto">Em andamento</span>
                         <h2>Projeto Comunitário 2026</h2>
-                        <p>Ação organizada pelo Clã Nasua para apoiar a comunidade local, desenvolvendo serviço, liderança e trabalho em equipe.</p>
+                        <p>Ação organizada pelo Clã Nasua para apoiar a comunidade local, desenvolvendo serviço, liderança e trabalho em equipe ajudando um abrigo de animais.</p>
                     </div>
                     <div class="impactosProjeto">
-                        <strong>20</strong><span>voluntários</span>
-                        <strong>4h</strong><span>de serviço</span>
+                        <strong>5</strong><span>voluntários</span>
+                        <strong>?h</strong><span>de serviço</span>
                     </div>
                 </div>
 
@@ -174,17 +202,17 @@
                 </div>
 
                 <div class="listaProjetos">
-                    <div class="cardProjeto" data-categoria="aventura">
+                    <div class="cardProjeto" data-categoria="aventura" onclick="">
                         <span>Aventura</span>
                         <h3>Primeiro Acampamento</h3>
                         <p>Primeiro Acampamento do Clã, programado pelos jovens para confratenizar.</p>
                     </div>
-                    <div class="cardProjeto" data-categoria="financeiro">
+                    <div class="cardProjeto" data-categoria="financeiro" onclick="">
                         <span>Financeiro</span>
                         <h3>Dinheiro para a Bandeira</h3>
                         <p>Arrecadação de dinheiro para fazer nossa bandeira, atravez da venda de doces.</p>
                     </div>
-                    <div class="cardProjeto" data-categoria="aventura">
+                    <div class="cardProjeto" data-categoria="aventura" onclick="">
                         <span>Aventura</span>
                         <h3>Subida ao Torre Amarela</h3>
                         <p>Acampamento com subida ao morro Torre Amarela com planejamento feito pelos jovens.</p>
@@ -193,6 +221,8 @@
             </div>
         </section>
 
+
+        <!--Insignia-->
         <section id="insignia" class="aba">
             <div class="containerAbas">
                 <span class="etiqueta escura">Progresso</span>
@@ -200,25 +230,28 @@
                 <div class="linhaAmarela"></div>
 
                 <div class="corrida">
-                    <div class="corredores"><img src="Imagens/Aba corrida/Icone-Matheus.png" alt=""><div><div class="linhaProgresso"><h3>Matheus</h3><strong>75%</strong></div><div class="barra"><div class="progresso matheus"></div></div></div></div>
-                    <div class="corredores"><img src="Imagens/Aba corrida/Icone-isa.png" alt=""><div><div class="linhaProgresso"><h3>Isadora</h3><strong>50%</strong></div><div class="barra"><div class="progresso isa"></div></div></div></div>
+                    <div class="corredores"><img src="Imagens/Aba corrida/Icone-Matheus.png" alt=""><div><div class="linhaProgresso"><h3>Matheus</h3><strong>10%</strong></div><div class="barra"><div class="progresso matheus"></div></div></div></div>
+                    <div class="corredores"><img src="Imagens/Aba corrida/Icone-isa.png" alt=""><div><div class="linhaProgresso"><h3>Isadora</h3><strong>10%</strong></div><div class="barra"><div class="progresso isa"></div></div></div></div>
                     <div class="corredores"><img src="Imagens/Aba corrida/Icone-lu.png" alt=""><div><div class="linhaProgresso"><h3>Luíza</h3><strong>10%</strong></div><div class="barra"><div class="progresso lu"></div></div></div></div>
                     <div class="corredores"><img src="Imagens/Aba corrida/icone-ber.png" alt=""><div><div class="linhaProgresso"><h3>Bernardo</h3><strong>10%</strong></div><div class="barra"><div class="progresso ber"></div></div></div></div>
-                    <div class="corredores"><img src="Imagens/Aba corrida/Icone-Leticia.png" alt=""><div><div class="linhaProgresso"><h3>Letícia</h3><strong>75%</strong></div><div class="barra"><div class="progresso matheus"></div></div></div></div>
+                    <div class="corredores"><img src="Imagens/Aba corrida/Icone-Leticia.png" alt=""><div><div class="linhaProgresso"><h3>Letícia</h3><strong>5%</strong></div><div class="barra"><div class="progresso leticia"></div></div></div></div>
                 </div>
             </div>
         </section>
 
+
+        <!--Rodapé-->
         <footer class="rodape">
             <img src="Imagens/Marca dágua do clã.png" alt="Marca do Clã">
             <div>
                 <h3>Contato</h3>
-                <a href="https://www.instagram.com/cla_tartannegro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a><br>
-                <a href="mailto:cla.nasua.tartannegro@gmail.com">E-mail</a>
+                <a href="https://www.instagram.com/cla_tartannegro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram do Clã</a><br>
+                <a href="mailto:cla.nasua.tartannegro@gmail.com">E-mail do Clã</a><br>
+                <a href="https://www.instagram.com/tartannegro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram do Grupo</a>
             </div>
             <div>
                 <h3>Atividades</h3>
-                <p>Sábado às 14:00h</p>
+                <p>Sábado das 14:00h às 17:00</p>
                 <p>Rua Santa Madalena Sofia Barat, 701 Alto, Curitiba - CEP: 82820-490.</p>
             </div>
             <div>
@@ -228,6 +261,8 @@
             </div>
         </footer>
 
+
+        <!--Logo Tartan-->
         <div class="logoTartan">
             <img src="Imagens/Logo_Tartan.png" alt="Logo Tartan">
         </div>

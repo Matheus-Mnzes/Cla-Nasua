@@ -36,3 +36,11 @@ function mudaProjetos(categoria){
 function modoEscuro(){
     document.body.classList.toggle("dark")
 }
+
+function abrirModalEntrada(){
+    document.getElementById("modalEntrada").classList.add("aberto");
+}
+
+function fecharModalEntrada(){
+    document.getElementById("modalEntrada").classList.remove("aberto");
+}
